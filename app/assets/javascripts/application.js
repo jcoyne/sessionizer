@@ -50,7 +50,25 @@ Sessionizer.Attend = function() {
   };
 }();
 
+Sessionizer.Presenters = function() {
+  function participantsUrl() {
+    return '/participants.json';
+  }
+
+  return {
+    setup: function() {
+      $('#typeahead').typeahead({
+        name: 'presenters',
+        prefetch: participantsUrl(),
+        hint: true,
+        highlight: true
+      });
+    }
+  }
+}
+
 $(function() {
     $(Sessionizer.Attend.setup);
-  });
+    Sessionizer.Presenters().setup();
+});
 

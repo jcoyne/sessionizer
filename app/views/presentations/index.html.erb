@@ -13,18 +13,7 @@
 <p><strong>Note:</strong> In order to add a presenter to your session, they must be registered in the system.</p>
 
 <%= semantic_form_for([parent_object, @presentation]) do |f| %>
-<%= text_field_tag 'name', '', :placeholder => 'Type a name', :id => 'typeahead' %> <%= submit_tag 'Add', :id => 'add-presenter' %>
-<% end %>
-
-<% content_for :javascript do %>
-$(function() {
-  $('#typeahead').typeahead(
-    {name: 'presenters',
-     prefetch: '/participants.json'}
-   );
-});
-
-
+  <%= text_field_tag 'name', '', :placeholder => 'Type a name', :id => 'typeahead' %> <%= submit_tag 'Add', :id => 'add-presenter' %>
 <% end %>
 
 <p style="margin-top: 120px">
