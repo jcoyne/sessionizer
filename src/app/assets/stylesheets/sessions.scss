@@ -5,15 +5,43 @@ $grey: rgb(209, 217, 220);
 /* This is style for the button that says "Yes! I might attend" */
 .yellow {
   background: rgb(255,214,94);
-  background: image-url("hydra_tag.png");
   background: linear-gradient(top,  rgba(255,214,94,1) 0%,rgba(254,191,4,1) 100%);
 }
 
 .yellow:hover {
   background: rgb(254,191,4);
-  background: image-url("hydra_tag.png");
   background: linear-gradient(top,  rgba(254,191,4,1) 0%,rgba(255,214,94,1) 100%);
 }
+
+.button {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,0.4) ;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.5),
+        0 0 1px 1px rgba(255,255,255,0.8),
+        0 0 0 1px rgba(0,0,0,0.06),
+        0 0 0 1px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 14px;
+  .title {
+    padding: 10px;
+    float: left;
+    color: #333;
+    font-weight: 800;
+    border-left: 1px solid rgba(255,255,255,0.3);
+  }
+  .meta {
+    text-indent: -9999px;
+    padding: 5px;
+    background: image-url("hydra_tag.png") no-repeat 5px 5px;
+    width: 28px;
+    height: 28px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    float: left;
+  }
+}
+
 
 .topic_level {
   margin:0;
