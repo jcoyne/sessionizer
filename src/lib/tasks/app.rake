@@ -59,22 +59,17 @@ namespace :app do
     event.rooms.destroy_all
 
     rooms = [
-      { :name => 'Theater', :capacity => 250 },
-      { :name => 'Nokomis', :capacity => 100 },
-      { :name => 'Minnetonka', :capacity => 100 },
-      { :name => 'Harriet', :capacity => 100 },
-      { :name => 'Calhoun', :capacity => 100 },
-      { :name => 'Brand', :capacity => 75 },
-      { :name => 'Proverb-Edison', :capacity => 48 },
-      { :name => 'Zeke Landres', :capacity => 40 },
-      { :name => 'Learn', :capacity => 24 },
-      { :name => 'Challenge', :capacity => 24 }, 
-      { :name => 'Discovery', :capacity => 23 }, # Lower so smaller sessions get put in there: no video recording
-      { :name => 'Tackle', :capacity => 23 }, # Lower so smaller sessions get put in there: no video recording
-      { :name => 'Stephen Leacock', :capacity => 23 }, # Lower so smaller sessions get put in there: no video recording
-      { :name => 'Gandhi', :capacity => 23 }, # Lower so smaller sessions get put in there: no video recording
-      { :name => 'Louis Pasteur', :capacity => 18 }, 
-      #{ :name => 'Texas', :capacity => 16 }, 
+      { :name => 'Workshop #1 - Room 351', :capacity => 35 },
+      { :name => 'Workshop #2 - Room 352', :capacity => 35 },
+      { :name => 'Workshop #3 - Room 301', :capacity => 40 },
+      { :name => 'Workshop #4 - Room 401', :capacity => 40 },
+      { :name => 'Breakout #1 - Room 289', :capacity => 12 },
+      { :name => 'Breakout #2 - Room 342', :capacity => 12 },
+      { :name => 'Breakout #3 - Room 446', :capacity => 30 },
+      { :name => 'Breakout #4 - Room 448', :capacity => 30 },
+      { :name => 'Great Room #1 - Room 201', :capacity => 130 },
+      { :name => 'Great Room #2 - Room 202', :capacity => 70 },
+      #{ :name => 'Texas', :capacity => 16 },
       #{ :name => 'California', :capacity => 16 }
     ]
 
