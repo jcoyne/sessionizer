@@ -1,5 +1,6 @@
 $white: #fff;
 $grey: rgb(209, 217, 220);
+$platinum: #E5E4E2;
 
 body {
   background-color: #fff;
@@ -108,7 +109,7 @@ a {
 }
 
 div.sidebar-box {
-  background: none repeat scroll 0 0 #CDCEEB;
+  background: none repeat scroll 0 0 $platinum;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
