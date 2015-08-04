@@ -6,7 +6,7 @@ class Admin::AdminController < ApplicationController
 
   def redirect_to_ssl
     if Rails.env.production? && !request.ssl?
-      redirect_to "https://sessionizer.herokuapp.com/admin/sessions/new"
+      redirect_to "https://connect2015.curationexperts.com/admin/sessions/new"
     end
   end
 
