@@ -81,7 +81,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #HOST = 'sessions.minnestar.org'  
-  HOST = 'localhost'
+  HOST = ENV['HEROKU_URL']
   config.action_mailer.default_url_options = { host: HOST }
   ActionMailer::Base.smtp_settings = {
     user_name: Rails.application.secrets.mandrill_username,
