@@ -80,11 +80,13 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  HOST = 'sessions.minnestar.org'  
+  #HOST = 'sessions.minnestar.org'  
+  HOST = 'localhost'
   config.action_mailer.default_url_options = { host: HOST }
   ActionMailer::Base.smtp_settings = {
-    :user_name => Rails.application.secrets.mandrill_username,
-    :password => Rails.application.secrets.mandrill_password,
+    user_name: Rails.application.secrets.mandrill_username,
+    password: Rails.application.secrets.mandrill_password,
+    #user_name: 'alicia@curationexperts.com', password: 'U6XZh8uopA8aRiweDxmF3A',
     :address => 'smtp.mandrillapp.com',
     :port => 587,
     :authentication => 'login',
