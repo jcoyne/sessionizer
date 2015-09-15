@@ -41,7 +41,7 @@
       .timeslot{ id: "timeslot_#{slot.id}" }
         %h2
           .time
-            = slot.date_range.to_s(with_day: false)
+            = slot.date_range.to_s(with_day: true)
           .title
             = slot.title
 
